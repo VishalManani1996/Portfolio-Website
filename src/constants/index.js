@@ -1,84 +1,13 @@
-// import project1 from "../assets/projects/project-1.jpg";
-// import project2 from "../assets/projects/project-2.jpg";
-// import project3 from "../assets/projects/project-3.jpg";
-// import project4 from "../assets/projects/project-4.jpg";
-
-// export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
-
-// export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
-
-// export const EXPERIENCES = [
-//   {
-//     year: "2023 - Present",
-//     role: "Senior Full Stack Developer",
-//     company: "Google Inc.",
-//     description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-//     technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
-//   },
-//   {
-//     year: "2022 - 2023",
-//     role: "Frontend Developer",
-//     company: "Adobe",
-//     description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-//     technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
-//   },
-//   {
-//     year: "2021 - 2022",
-//     role: "Full Stack Developer",
-//     company: "Facebook",
-//     description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-//     technologies: ["Python", "Svelte", "Three.js", "Postgres"],
-//   },
-//   {
-//     year: "2020 - 2021",
-//     role: "Software Engineer",
-//     company: "Paypal",
-//     description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-//     technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
-//   },
-// ];
-
-// export const PROJECTS = [
-//   {
-//     title: "E-Commerce Website",
-//     image: project1,
-//     description:
-//       "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-//     technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
-//   },
-//   {
-//     title: "Task Management App",
-//     image: project2,
-//     description:
-//       "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-//     technologies: ["HTML", "CSS", "Angular", "Firebase"],
-//   },
-//   {
-//     title: "Portfolio Website",
-//     image: project3,
-//     description:
-//       "A personal portfolio website showcasing projects, skills, and contact information.",
-//     technologies: ["HTML", "CSS", "React", "Bootstrap"],
-//   },
-//   {
-//     title: "Blogging Platform",
-//     image: project4,
-//     description:
-//       "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-//     technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
-//   },
-// ];
-
-// export const CONTACT = {
-//   address: "767 Fifth Avenue, New York, NY 10153 ",
-//   phoneNo: "+12 4555 666 00 ",
-//   email: "me@example.com",
-// };
 import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 import freshFruitProject from "../assets/projects/freshFruitProject.png";
+import weatherApp from "../assets/projects/weatherApp.png";
+import snackbar from "../assets/projects/snackbar.png";
+import expenseTracker from "../assets/projects/expenseTracker.png";
+import todolist from "../assets/projects/todolist.png";
+import ECommerceDashboard from "../assets/projects/ECommerceDashboard.jpeg";
 
 export const HERO_CONTENT = `I am React.js Developer with 2 years of experience in building responsive web applications. I am good in creating complex features, integrating RESTful APIs, and optimizing mobile performance. I'm excited to work on building innovative features that enhance user experiences and solve real-world problems. I’m particularly interested in developing scalable web applications with React.js and Node.js, focusing on creating seamless, interactive interfaces and efficient backend services. Exploring new technologies and integrating advanced functionalities like real-time data processing and AI-driven features are also areas I’m keen to dive in`;
 
@@ -102,7 +31,8 @@ export const EXPERIENCES = [
       "Javascript",
       "React.js",
       "Express.js",
-      "mongoDB, Material UI",
+      "mongoDB",
+      "Material UI",
     ],
   },
   {
@@ -128,37 +58,65 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
+    title: "E Commerce Dashbord",
+    image: ECommerceDashboard,
+    description:
+      "E-commerce Dashboard project is a full-featured MERN stack application with CRUD operations, providing a user-friendly interface for managing products and customer data. Built with Tailwind CSS for sleek, responsive design, the dashboard is optimized for both desktop and mobile use, secured with authentication and middleware. This application allows admins to easily add, edit, delete, and view product details, making it a dynamic and efficient tool for e-commerce management.",
+    technologies: [
+      "MongoDB",
+      "Express Js",
+      "React Js",
+      "Node Js",
+      "Tailwind CSS",
+    ],
+    link: "https://e-commerce-mern-project-frontend.vercel.app",
+    source_code:
+      "https://github.com/VishalManani1996/E-Commerce-MERN-Project/tree/main",
+  },
+  {
     title: "Fruit Selling E-Commerce Website",
     image: freshFruitProject,
     description:
       "Fully Responsive Fruits Selling Ecommerce website with React + Tailwind CSS and Framer-motion.",
     technologies: ["HTML", "CSS", "React Js", "Tailwind CSS", "Framer Motion"],
+    link: "http://fruit-selling-vmm.netlify.app/",
+    source_code: "https://github.com/VishalManani1996/Fresh-Fruit-Store",
   },
   {
-    title: "Task Management App",
-    image: project2,
+    title: "Expense Tracker",
+    image: expenseTracker,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "Created a expense tracker app using React Js hooks like useState, useContext and useReducer and context API.",
+    technologies: ["HTML", "CSS", "JavaScript", "React Js"],
+    link: "https://expense-tracker-weld-one.vercel.app/",
+    source_code: "https://github.com/VishalManani1996/Expense-Tracker",
   },
   {
-    title: "Portfolio Website",
-    image: project3,
+    title: "Weather App",
+    image: weatherApp,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "A Weather App for a website using HTML, CSS, and JavaScript. Current weather data was fetched from a free API key provided by OpenWeatherMap and  information such as temperature, weather conditions, humidity, and wind speed based on the city entered by the user was displayed. I used JavaScript to retrieve and display the weather data on the website. The app also featured a search box where users could input a city name to view the weather information for that specific location.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    link: "https://weather-app-vmm.netlify.app/",
+    source_code: "https://github.com/VishalManani1996/Weather-App",
   },
   {
-    title: "Blogging Platform",
-    image: project4,
-    description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+    title: "To do list",
+    image: todolist,
+    description: `This To-Do List project is a simple React application that allows users to manage a list of tasks. Key features include:
+Adding new tasks with a unique ID and displaying them in a list.
+Marking tasks as completed by toggling a checkbox.
+Deleting tasks from the list.
+User input is handled dynamically using useState for managing the list and task input.
+The UI includes an input field, add button, and list of tasks, with functionality to update, complete, or delete tasks easily.`,
+    technologies: ["HTML", "CSS", "JavaScript", "React Js"],
+    link: "https://to-do-app-for-list.vercel.app/",
+    source_code: "https://github.com/VishalManani1996/To-Do-App-For-list",
   },
 ];
 
 export const CONTACT = {
   address: "Pune, Maharashtra, India ",
-  phoneNo: " ********** ",
+  // phoneNo: " ********** ",
   email: "vishalmanani35@gmail.com",
 };

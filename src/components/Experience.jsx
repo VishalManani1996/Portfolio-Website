@@ -45,18 +45,25 @@ const Experience = () => {
                 </p>
               ))} */}
               {experience?.description?.map((item, index) => (
-                <ul key={index} className="list-disc mb-4 ml-4 text-neutral-400">
+                <ul
+                  key={index}
+                  className="list-disc mb-4 ml-4 text-neutral-400"
+                >
                   <li>{item}</li>
                 </ul>
               ))}
-              {experience?.technologies.map((technology, index) => (
-                <span
-                  key={index}
-                  className="mr-2 mt-4 rounded  px-2 py-1 bg-neutral-900 text-sm font-medium text-purple-500"
-                >
-                  {technology}
-                </span>
-              ))}
+
+              <div className="flex flex-wrap gap-2">
+                {experience?.technologies.map((technology, index) => (
+                  <span
+                    key={index}
+                    className="rounded px-2 py-1 bg-neutral-900 text-sm font-medium text-purple-500"
+                  >
+                    {technology}
+                  </span>
+                ))}
+              </div>
+              
             </motion.div>
           </div>
         ))}

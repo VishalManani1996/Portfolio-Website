@@ -1,3 +1,5 @@
+import { FaGithub, FaGlobe } from "react-icons/fa";
+import { CiGlobe } from "react-icons/ci";
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
 
@@ -43,6 +45,34 @@ const Projects = () => {
                   {technology}
                 </span>
               ))}
+              <div className="flex flex-wrap gap-7 my-4">
+                <a
+                  // href="http://fruit-selling-vmm.netlify.app/"
+                  href={project?.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="flex items-center justify-center gap-3 border-slate-400 border-[1px] rounded-xl text-slate-400 py-2 px-2  ">
+                    <div className="text-2xl">
+                      <FaGlobe />
+                    </div>
+                    <div className="text-sm">Check live website</div>
+                  </div>
+                </a>
+                <a
+                  // href="https://github.com/VishalManani1996/Fresh-Fruit-Store"
+                  href={project?.source_code}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="flex items-center justify-center gap-3 border-slate-400 border-[1px] rounded-xl text-slate-400 py-2 px-2 text-sm ">
+                    <div className="text-2xl">
+                      <FaGithub />
+                    </div>
+                    <div className="text-sm">Source Code</div>
+                  </div>
+                </a>
+              </div>
             </motion.div>
           </div>
         ))}
