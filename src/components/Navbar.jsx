@@ -1,7 +1,7 @@
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import logo from "../assets/logo3.png";
-import Resume from "../assets/VishalManani_BE_2yrs.pdf"
+import Resume from "../assets/VishalManani_BE_2.2years.pdf"
 
 const Navbar = () => {
   return (
